@@ -1,0 +1,135 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap:2%;
+}
+
+.about_me{
+    width: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    place-items: center;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+
+
+.about_me-image >img{
+    border-radius: 3rem;
+    overflow: hidden;
+    transform:rotate(10deg) ;
+    width: 75%;
+    transition: var(--transition);
+}
+.about_me-image >img:hover{
+    transform:rotate(0deg);
+    width: 100%;
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.about_card{
+    background: var(--color-bg-variant);
+    width: 150px;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.contactmedetails{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1px;
+}
+
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+
+}
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5{
+    font-size: 0.95rem;
+}
+
+.about_card small{
+    font-size: 0.7rem;
+    color:var(--color-light);
+}
+.about_content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+
+/* ************* MEDIA QUERIES (MEDIA Devices)************************* */
+
+@media screen and ( max-width:600px){
+    .about_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about_me{
+        width: 100%;
+        margin-right: 3rem;
+    }
+    .about_cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_card{
+        width: 100%;
+    }
+    .about_content p{
+        margin: 1rem 0 1.5rem ;
+    }
+}
+/* ************* MEDIA QUERIES (SMALL Devices)************************* */
+
+@media screen and ( max-width:500px){
+    .about_me{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 3rem;
+    }
+    .about_cards{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 4rem;
+        width: 65%;
+        gap: 1rem;
+    }
+    .about_card{
+        width: 100%;
+    }
+    .about_content{
+        text-align: center;
+    }
+    .about_content p{
+        margin: 1.5rem 0;
+    }
+}
+
+
