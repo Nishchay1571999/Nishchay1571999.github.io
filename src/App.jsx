@@ -1,16 +1,12 @@
-import React from 'react'
-import Header from './components/Header/Header'
-import Index from './components/Index'
-
-
+import React from "react";
+import Index from "./components/Index";
 
 const App = () => {
   return (
     <div>
       <Index />
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
