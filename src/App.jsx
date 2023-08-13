@@ -1,12 +1,14 @@
-import React from "react";
-import Index from "./components/Index";
+import React from "react"
+import "./App.scss"
+import { BrowserRouter } from "react-router-dom"
+import Pages from "./pages/index"
 
 const App = () => {
   return (
-    <div>
-      <Index />
-    </div>
-  );
-};
+    <BrowserRouter>
+      <Pages />
+    </BrowserRouter>
+  )
+}
 
-export default App;
+export default App
