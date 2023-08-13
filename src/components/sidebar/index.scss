@@ -1,6 +1,6 @@
 .nav-bar {
     background: #2e2d2d27;
-    width: 60px;
+    width: 80px;
     height:100%;
     position: absolute;
     top:0;
@@ -80,7 +80,7 @@ nav {
             content: 'ABOUT';
         }
     }
-    a.contact-form {
+    a.contact-link {
         &:after{
             content: 'CONTACT';
         }
@@ -90,7 +90,11 @@ nav {
             content: 'BLOGS';
         }
     }
-
+    a.projects-page {
+        &:after{
+            content: 'PROJECT';
+        }
+    }
     a.active {
         svg {
             color: #ffd700;

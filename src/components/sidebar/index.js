@@ -1,3 +1,4 @@
+import React from "react"
 import { Link, NavLink } from "react-router-dom"
 import "./index.scss"
 import LogoN from "../../assets/images/logo-s.png"
@@ -9,6 +10,7 @@ import {
   faProjectDiagram,
   faSuitcase,
   faUser,
+  faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 const Sidebar = () => {
@@ -34,9 +36,17 @@ const Sidebar = () => {
           extract="true"
           activeclassname="active"
           to="/contact"
-          className={"contact-form"}
+          className={"contact-link"}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#fff" />
+        </NavLink>
+        <NavLink
+          extract="true"
+          activeclassname="active"
+          to="/projects"
+          className={"projects-page"}
+        >
+          <FontAwesomeIcon icon={faUserAstronaut} color="#fff" />
         </NavLink>
         <NavLink
           extract="true"
