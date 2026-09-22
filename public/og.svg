@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <g fill="#12151a" font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="84" font-size="30" font-weight="700">NB<tspan fill="#1e5eff"> /</tspan></text>
+    <text x="160" y="82" font-size="23">Nishchay Bhatt</text>
+    <text x="64" y="182" font-size="15" letter-spacing="2" fill="#3f4650">FRONTEND &amp; MOBILE ENGINEER</text>
+    <g font-size="65" font-weight="600" letter-spacing="-2">
+      <text x="60" y="275">Interfaces that hold up</text>
+      <text x="60" y="353">when the system</text>
+      <text x="60" y="431">gets complicated.</text>
+    </g>
+    <path d="M64 501 H1136" stroke="#c9c4b8"/>
+    <circle cx="67" cy="501" r="5" fill="#1e5eff"/>
+    <text x="64" y="553" font-size="19" fill="#3f4650">React · React Native · Native Android · Real-time systems</text>
+    <text x="1136" y="553" text-anchor="end" font-size="17" fill="#3f4650">Bengaluru, India</text>
+  </g>
+</svg>

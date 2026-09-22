@@ -1,61 +1,48 @@
 {
-  "name": "react-portfolio-website",
-  "version": "0.1.0",
+  "name": "nishchay-bhatt-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@fortawesome/fontawesome-svg-core": "^7.3.1",
-    "@fortawesome/free-brands-svg-icons": "^7.3.1",
-    "@fortawesome/free-solid-svg-icons": "^7.3.1",
-    "@fortawesome/react-fontawesome": "^3.5.0",
-    "animate.css": "^4.1.1",
-    "firebase": "^12.19.0",
-    "gsap-trial": "^3.13.0",
-    "leaflet": "^1.9.4",
-    "loaders.css": "^0.1.2",
-    "prop-types": "^15.8.1",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
-    "react-leaflet": "^5.0.0",
-    "react-loaders": "^3.0.1",
-    "react-router-dom": "^7.18.4",
-    "react-scripts": "5.0.1",
-    "sass": "^1.104.1",
-    "web-vitals": "^6.2.2"
-  },
-  "devDependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^7.0.1",
-    "@testing-library/react": "^16.3.3",
-    "@testing-library/user-event": "^14.6.7"
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=20.9.0",
+    "pnpm": ">=10 <11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "social:generate": "node scripts/generate-social.mjs",
+    "screenshots": "node scripts/visual-review.mjs",
+    "preinstall": "node scripts/require-pnpm.mjs",
+    "dev": "next dev",
+    "preview": "serve out --listen tcp://127.0.0.1:4173 --no-clipboard",
+    "build": "next build",
+    "test:e2e": "playwright test",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "next typegen && tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm lint && pnpm typecheck && pnpm format:check"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^react-router/dom$": "react-router/dist/development/dom-export.js"
-    }
+  "dependencies": {
+    "@fontsource-variable/inter-tight": "^5.2.0",
+    "@fontsource/ibm-plex-mono": "^5.2.0",
+    "@fontsource/ibm-plex-sans": "^5.2.0",
+    "next": "^16.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.58.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "^16.1.0",
+    "eslint-config-prettier": "^10.1.0",
+    "prettier": "^3.6.0",
+    "serve": "14.2.6",
+    "sharp": "0.35.4",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0"
   }
 }

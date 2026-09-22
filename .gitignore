@@ -1,2 +1,10 @@
 node_modules/
-agent-flow/
+.next/
+out/
+.DS_Store
+*.tsbuildinfo
+.env*
+!.env.example
+playwright-report/
+test-results/
+docs/

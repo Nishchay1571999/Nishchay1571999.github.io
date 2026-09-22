@@ -1,0 +1,9 @@
+.next
+out
+node_modules
+pnpm-lock.yaml
+agent-flow
+docs
+next-env.d.ts
+playwright-report
+test-results
