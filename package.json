@@ -2,7 +2,7 @@
   "name": "nishchay-bhatt-portfolio",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.34.6",
   "engines": {
     "node": ">=20.9.0",
     "pnpm": ">=10 <11"
